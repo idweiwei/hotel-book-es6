@@ -1,0 +1,35 @@
+@import 'reset';
+@import "common";
+@import "slideSelector";
+
+
+#order{
+	.order-area{
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		padding-bottom: 45px;
+	}
+	.fill-order{
+		.icon-forward:before{
+			float: right;
+		}
+		.fill-order-title{
+			background: $backColor;
+			text-indent: 10px;
+			line-height: 40px;
+			color: $dimColor;
+		}
+		.fill-order-info{
+			padding-left: 10px;
+			line-height: 44px;
+			@extend %bb;
+			p{
+				padding-right: 10px;
+			}
+			p:first-child{
+				@extend %bb;
+			}
+		}
+	}
+}

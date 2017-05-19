@@ -1,0 +1,40 @@
+#calendar-plugin{
+
+	.calendar-wrap{
+		.calendar-week{
+			height: 40px;
+			display:flex;
+			display:-webkit-flex;
+			color: #555;
+			border-bottom: 2px solid $baseColor;
+		}
+		span{
+			flex: auto;
+		    display: inline-flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+	}
+
+	.calendar-title{
+		text-align: center;
+		line-height: 50px;
+		display:flex;
+		font-size: 14px;
+		border-bottom: 1px solid #ccc;
+		h3{
+			flex:10;
+		}
+		span{
+			color:$baseColor;
+
+		}
+	}
+
+	.calendar-day{
+		width: 14.2%;
+	    text-align: center;
+	    line-height: 30px;
+	    float: left;
+	}
+}

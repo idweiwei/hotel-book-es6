@@ -1,0 +1,97 @@
+@import 'reset';
+@import "common";
+@import "swiper";
+@import "city";
+@import "calendar";
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: $backColor;
+  overflow: auto;
+}
+
+.banner {
+  height: 135px;
+  ul, li, a {
+    height: 100%;
+  }
+  a {
+    display: block;
+  }
+  .banner-info {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    color: #ffffff;
+    font-size: 24px;
+    z-index: 2;
+  }
+}
+
+%bb {
+  border-bottom: 1px solid $lineColor;
+}
+
+.index-main {
+  background: $whiteColor;
+  padding-left: 10px;
+  @extend %bb;
+  .check-in-hotel{
+      .main-item-massage{
+        color:$baseColor;
+      }
+    }
+   input{
+    outline: none;
+    border:none;
+   } 
+  .main-item {
+    height: 70px;
+    line-height: 70px;
+    font-size: 12px;
+    color: $dimColor;
+    display:flex;
+    @extend %bb;
+    &:last-child {
+      border-bottom: none;
+    }
+
+    
+    .main-item-massage{
+      flex:1; 
+      padding-right: 10px;
+      &:before{
+        float: right;
+        color:$baseColor;
+      }
+    }
+    .main-item-title{
+      flex:none;
+      width: 60px;
+    }
+    .location{
+      display:flex;
+      flex-direction:column;
+      flex:none;
+      width: 70px;
+      text-align: center;
+      padding-top: 10px;
+      line-height: 26px;
+      border-left: 1px solid $lineColor;
+      color:$baseColor;
+    }
+  }
+
+}
+.search{
+  background: $baseColor;
+  color:$whiteColor;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  margin: 20px 0; 
+}
+

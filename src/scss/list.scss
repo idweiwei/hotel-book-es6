@@ -1,0 +1,146 @@
+//依赖样式
+@import 'reset';
+@import "common";
+@import "calendar";
+
+.list-main{
+	width: 100%;height: 100%;
+	overflow: auto;
+	padding-bottom: 50px;
+	box-sizing:border-box;
+	.pick-date{
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+
+		span{
+			float: left;
+			width: 33.33%;
+			text-align: center;	
+		}
+		background: $backColor;
+		@extend %bb;
+
+		span.modify-date{
+			color:$baseColor;
+			text-align: right;
+			
+			&:before{
+				float: right;
+				padding-right: 10px; 
+			}
+		}
+	}
+	
+	.hotel-list{
+		padding-bottom: 45px;
+		dl{
+			display: flex;
+			padding: 10px;
+			@extend %bb;
+		}
+		dt{
+			width: 70px;
+			height: 70px;
+			flex: none;
+			margin: 8px 10px 8px 0;
+			img{
+				width: 100%;height: 100%;
+			}
+		}
+		dd{
+			flex: auto;
+			p{
+				line-height: 20px;
+				color:$dimColor;
+			}
+		}
+		h4{
+			font-size: 14px;
+			font-weight: 600;
+			color:#333;
+			line-height: 24px;
+		}
+		.point{
+			color:$orangeColor;
+		}
+		.price{
+			float: right;
+			color:$orangeColor;
+			font-size: 18px;	
+			small{
+				color:$dimColor;
+				font-size: 12px;
+			}
+		}
+	}
+
+}
+
+.container{
+	position: relative;
+	.filter{
+		height: 45px;
+		width: 100%;
+		line-height: 45px;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		background: $whiteColor;
+		border-top: 1px solid $baseColor;
+		font-size: 0;
+		z-index: 3;
+		.filter-nav{
+			position:relative;
+			z-index: 2;
+		}
+		li{
+
+			display: inline-block;
+			width: 25%;
+			font-size: 14px;
+			border-right: 1px solid $lineColor;
+			&:last-child{
+				border: none;
+			}
+			&:after{
+				font-size: 10px;
+				transform: scale(0.6);
+			}
+		}
+	}
+
+	.masker{
+		width: 100%;height: 100%;
+		background: rgba(0,0,0,.7);
+		position: absolute;
+		z-index: 1;
+		display:none;
+		top: 0;
+	}
+	.filter-area{
+		background: $whiteColor;
+		width: 400%; 
+		position: absolute;
+		bottom: 45px;
+		transition: transform ease 0.3s;
+		transform: translateZ(0);
+		
+
+		.filter-item{
+			width: 25%;
+			float: left;
+			line-height: 40px;
+			p{
+				@extend %bb;
+				padding: 0 10px;
+			}	
+		}
+	}
+	.masker-show{
+		display: block;
+	}
+}
+
+
+

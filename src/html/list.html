@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>酒店列表</title>
+	<link rel="stylesheet" href="../../dist/font/iconfont.css">
+	<link rel="stylesheet" href="../../dist/css/list.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<span class="back icon iconfont icon-back"></span>
+			<p class="plugin-title">选择城市</p>
+		</div>
+		<div class="list-main">
+			<div class="pick-date">
+				<span class="check-in-date">xxxx-xx-xx</span>
+				<span class="check-out-date">xxxx-xx-xx</span>
+				<span class="modify-date icon iconfont icon-forward">修改</span>
+			</div>
+			<div class="hotel-list">
+				没有更多了...
+			</div>
+		</div>
+		<div class="filter">
+			<ul class="filter-nav">
+				<li class="icon iconfont icon-icon05-copy-copy-copy" filter="arrange" index="0">排序</li>
+				<li class="icon iconfont icon-icon05-copy-copy-copy" filter="price" index="1">价格</li>
+				<li class="icon iconfont icon-icon05-copy-copy-copy" filter="region" index="2">区域</li>
+				<li class="icon iconfont icon-icon05-copy-copy-copy" filter="rank"  index="3">星级</li>
+			</ul>
+		</div>
+
+		<div class="masker">
+			<div class="filter-area">
+					<div class="filter-item arrange">
+						<p class="checkbox" arrange="down"><span>价格由高到低</span><span class="icon iconfont right"></span></p>
+						<p class="checkbox" arrange="up"><span>价格由低到高</span><span class="icon iconfont right"></span></p>
+					</div>
+					<div class="filter-item price">
+						价格筛选区域
+					</div>
+					<div class="filter-item region">
+						<p class="checkbox" region="海淀区"><span>海淀区</span><span class="icon iconfont right"></span></p>
+						<p class="checkbox" region="朝阳区"><span>朝阳区</span><span class="icon iconfont right"></span></p>
+						<p class="checkbox" region="大兴区"><span>大兴区</span><span class="icon iconfont right"></span></p>
+						<p class="checkbox" region="通州区"><span>通州区</span><span class="icon iconfont right"></span></p>
+						<p class="checkbox" region="东城区"><span>东城区</span><span class="icon iconfont right"></span></p>
+						<p class="checkbox" region="西城区"><span>西城区</span><span class="icon iconfont right"></span></p>
+					</div>
+					<div class="filter-item rank">
+						<p class="checkbox" rank="0"><span>不限</span><span class="icon iconfont right"></span></p>
+						<p class="checkbox" rank="2">
+						<span>二星及以下经济型</span><span class="icon iconfont right"></span>
+						</p>
+						<p class="checkbox" rank="3"><span>三星</span><span class="icon iconfont right"></span>
+						</p>
+						<p class="checkbox" rank="4"><span>四星</span><span class="icon iconfont right"></span>
+						</p>
+						<p class="checkbox" rank="5"><span>五星</span><span class="icon iconfont right"></span>
+						</p>
+					</div>
+
+			</div>
+		</div>
+
+
+		
+	</div>
+	
+
+<div class="plugin" id="calendar-plugin">
+		<div class="header">
+			<span class="back icon iconfont icon-back"></span>
+			<p class="plugin-title">选择日期</p>
+		</div>
+		<div class="calendar-wrap">
+			<div class="calendar-title">
+				<span class="prev icon iconfont icon-back"></span>
+				<h3>YYYY-MM</h3>
+				<span class="next icon iconfont icon-forward"></span>
+			</div>
+			<div class="calendar-week">
+				<span>周日</span>
+				<span>周一</span>
+				<span>周二</span>
+				<span>周三</span>
+				<span>周四</span>
+				<span>周五</span>
+				<span>周六</span>
+
+			</div>
+			<div class="calendar-month ks-clear">
+				
+			</div>
+		</div>
+		
+	</div>
+	<script src="../../dist/js/list.js"></script>
+</body>
+</html>

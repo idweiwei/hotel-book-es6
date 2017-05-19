@@ -1,0 +1,34 @@
+.city{
+  .split-line{
+    background: #eee;
+    padding-left: 10px;
+    color: #555;
+    height: 24px;
+    line-height: 24px;
+  }
+  .hot-cities{
+    li{
+      float: left;
+      width: 33.33%;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+  .alphabet{
+    display: flex;
+    flex-wrap: wrap;
+    span{
+      text-align: center;
+      line-height: 30px;
+      min-width: 11%;
+    }
+  }
+  .list{
+    padding-left: 10px;
+    li{
+      line-height: 30px;
+      border-bottom:1px solid #ccc;
+    }
+  }
+}

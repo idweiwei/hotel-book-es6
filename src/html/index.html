@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>预定酒店</title>
+	<link rel="stylesheet" href="../../dist/font/iconfont.css">
+	<link rel="stylesheet" href="../../dist/css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="banner swiper-container">
+			<ul class="swiper-wrapper">
+				<!--<li style="background: url();background-size: cover;"><a href=""></a></li>-->
+			</ul>
+			<span class="banner-info">酒店预订</span>
+		</div>
+		<div class="index-main">
+			<div class="main-item check-in-hotel">
+				
+				<span class="main-item-title">入住地</span>
+				<span class="main-item-massage icon iconfont icon-forward">北京</span>
+				<span class="location">
+					<em class="icon iconfont icon-dingwei"></em>
+					<small>我的位置</small>
+				</span>
+			</div>
+			<div class="main-item check-in-date">
+				<span class="main-item-title">入住日</span>
+				<span class="main-item-massage icon iconfont icon-forward">2017/03/17</span>
+			</div>
+			<div class="main-item check-out-date">
+				<span class="main-item-title">离店日</span>
+				<span class="main-item-massage icon iconfont icon-forward">2017/03/19</span>
+			</div>
+			<div class="main-item">
+				<span class="main-item-title">酒店名</span>
+				<label class="main-item-massage"><input type="text" placeholder="酒店名称（选填）" class="hotel-name"></label>
+			</div>
+		</div>
+		<div class="search">
+			<span class="icon iconfont icon-search"></span>&nbsp;搜索酒店
+		</div>
+	</div>
+	<div class="plugin" id="city-plugin">
+		<div class="header">
+			<span class="back icon iconfont icon-back"></span>
+			<p class="plugin-title">选择城市</p>
+		</div>
+        <div class="city">
+            <div>
+                <div class="split-line">当前</div>
+                <p>
+                    北京中关村
+                </p>
+            </div>
+            <div>
+                <div class="split-line">热门</div>
+                <ol class="hot-cities ks-clear">
+                    <li>北京</li>
+                    <li>北京</li>
+                    <li>北京</li>
+                    <li>北京</li>
+                    <li>北京</li>
+                </ol>
+            </div>
+            <div>
+                <div class="split-line">更多</div>
+                <div class="alphabet">
+
+                </div>
+            </div>
+            <div class="cities-frame">
+                <!--<div>
+                    <div class="split-line">A</div>
+                    <ul class="list">
+                        <li>北京</li>
+
+                    </ul>
+                </div>-->
+            </div>
+
+        </div>
+
+	</div>
+	<div class="plugin" id="calendar-plugin">
+		<div class="header">
+			<span class="back icon iconfont icon-back"></span>
+			<p class="plugin-title">选择日期</p>
+		</div>
+		<div class="calendar-wrap">
+			<div class="calendar-title">
+				<span class="prev icon iconfont icon-back"></span>
+				<h3>YYYY-MM</h3>
+				<span class="next icon iconfont icon-forward"></span>
+			</div>
+			<div class="calendar-week">
+				<span>周日</span>
+				<span>周一</span>
+				<span>周二</span>
+				<span>周三</span>
+				<span>周四</span>
+				<span>周五</span>
+				<span>周六</span>
+
+			</div>
+			<div class="calendar-month ks-clear">
+				
+			</div>
+		</div>
+
+	</div>
+	<!--<script>
+		function getposition(data){
+			console.log(data);
+		}
+	</script>
+	 <script src="http://apis.map.qq.com/ws/location/v1/ip?key=7SFBZ-SLNRP-UTZDY-VMH2X-NQG5T-D3FRF&output=jsonp&callback=getposition()"></script> -->
+	<script src="../../dist/js/index.js"></script>
+</body>
+</html>
